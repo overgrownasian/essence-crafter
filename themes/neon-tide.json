@@ -1,0 +1,33 @@
+{
+  "id": "neon-tide",
+  "label": "Neon Tide",
+  "description": "A modular example theme loaded from the themes folder.",
+  "unlockRequirement": "signed-in",
+  "variables": {
+    "app-background": "radial-gradient(circle at 12% 10%, rgba(91, 255, 235, 0.18), transparent 22%), radial-gradient(circle at 85% 14%, rgba(38, 127, 255, 0.18), transparent 22%), linear-gradient(180deg, #07111e 0%, #08101a 45%, #04070d 100%)",
+    "panel": "rgba(8, 19, 30, 0.88)",
+    "panel-strong": "rgba(10, 28, 42, 0.96)",
+    "line": "rgba(118, 235, 255, 0.16)",
+    "text": "#e8fcff",
+    "muted": "#a8c9d8",
+    "accent": "#76ebff",
+    "accent-strong": "#1d8dff",
+    "accent-cool": "#a4fff2",
+    "ghost-fill": "rgba(118, 235, 255, 0.08)",
+    "danger-fill": "rgba(255, 92, 150, 0.16)",
+    "chip-fill": "rgba(255, 255, 255, 0.04)",
+    "chip-emoji-fill": "rgba(255, 255, 255, 0.07)",
+    "chip-hover-fill": "rgba(118, 235, 255, 0.08)",
+    "status-fill": "rgba(255, 255, 255, 0.04)",
+    "board-line": "rgba(118, 235, 255, 0.05)",
+    "board-glow": "rgba(118, 235, 255, 0.1)",
+    "board-surface": "linear-gradient(180deg, rgba(5, 16, 25, 0.72), rgba(5, 10, 16, 0.94))",
+    "desktop-menu-bg": "linear-gradient(180deg, rgba(8, 28, 44, 0.98), rgba(5, 14, 24, 0.98))",
+    "card-bg": "linear-gradient(180deg, rgba(10, 36, 56, 0.98), rgba(6, 15, 28, 0.98))",
+    "confirm-bg": "linear-gradient(180deg, rgba(8, 28, 44, 0.98), rgba(5, 14, 24, 0.98))",
+    "trash-fill": "rgba(5, 14, 24, 0.82)",
+    "workbench-item-bg": "linear-gradient(180deg, rgba(164, 255, 242, 0.14), rgba(255, 255, 255, 0.04))",
+    "processing-bg": "linear-gradient(180deg, rgba(118, 235, 255, 0.22), rgba(255, 255, 255, 0.05))"
+  },
+  "extraCss": "{{selector}} .workbench { background: linear-gradient(var(--board-line) 1px, transparent 1px), linear-gradient(90deg, var(--board-line) 1px, transparent 1px), radial-gradient(circle at top, var(--board-glow), transparent 24%), linear-gradient(180deg, rgba(7, 18, 28, 0.94), rgba(4, 9, 14, 0.99)); background-size: 36px 36px, 36px 36px, auto, auto; }"
+}
