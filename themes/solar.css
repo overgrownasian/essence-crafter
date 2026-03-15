@@ -1,0 +1,58 @@
+{{selector}} .desktop-menu-button {
+  color: var(--accent-strong);
+}
+
+{{selector}} .ghost-button,
+{{selector}} .panel-toggle,
+{{selector}} .panel-label-button,
+{{selector}} .mobile-menu-title {
+  color: var(--accent-strong);
+}
+
+{{selector}} .mobile-menu-card,
+{{selector}} .celebration-card,
+{{selector}} .share-card,
+{{selector}} .share-card.global,
+{{selector}} .confirmation-card {
+  color: var(--text);
+}
+
+{{selector}} .stat-card,
+{{selector}} .sort-select select,
+{{selector}} .element-search {
+  background: rgba(255, 248, 234, 0.92);
+  color: var(--text);
+  border-color: rgba(190, 134, 55, 0.18);
+}
+
+{{selector}} .sort-select,
+{{selector}} .sort-select span {
+  color: var(--muted);
+}
+
+{{selector}} .stat-card strong {
+  color: var(--accent-strong);
+}
+
+{{selector}} .share-discovery-label,
+{{selector}} .celebration-label,
+{{selector}} .share-plus,
+{{selector}} .share-arrow,
+{{selector}} .panel-kicker,
+{{selector}} .stat-label {
+  color: var(--accent-strong);
+}
+
+{{selector}} .share-status,
+{{selector}} .share-tagline,
+{{selector}} .share-flavor,
+{{selector}} .confirmation-card p:last-of-type,
+{{selector}} .celebration-card p:last-of-type {
+  color: var(--muted);
+}
+
+{{selector}} .share-card.global {
+  box-shadow:
+    0 0 0 1px rgba(215, 149, 54, 0.14) inset,
+    0 0 30px rgba(255, 191, 94, 0.12);
+}
