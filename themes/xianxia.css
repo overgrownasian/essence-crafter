@@ -1,0 +1,171 @@
+{{selector}} .workbench {
+  position: relative;
+  background:
+    linear-gradient(var(--board-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--board-line) 1px, transparent 1px),
+    radial-gradient(circle at 18% 22%, rgba(245, 236, 214, 0.08), transparent 20%),
+    radial-gradient(circle at 78% 70%, rgba(118, 180, 154, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba(214, 177, 93, 0.08), transparent 18%, transparent 82%, rgba(158, 46, 43, 0.08)),
+    repeating-linear-gradient(
+      0deg,
+      rgba(245, 236, 214, 0.028) 0 2px,
+      rgba(125, 57, 50, 0.02) 2px 5px,
+      transparent 5px 13px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(214, 177, 93, 0.03) 0 2px,
+      rgba(76, 146, 120, 0.018) 2px 7px,
+      transparent 7px 18px
+    ),
+    radial-gradient(circle at top, var(--board-glow), transparent 22%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent 24%),
+    linear-gradient(180deg, rgba(109, 25, 28, 0.18), rgba(49, 15, 18, 0.12)),
+    var(--board-surface);
+  box-shadow:
+    inset 0 0 0 1px rgba(214, 177, 93, 0.08),
+    inset 0 0 56px rgba(18, 7, 10, 0.35);
+}
+
+{{selector}} .workbench::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 22% 24%, rgba(245, 236, 214, 0.05), transparent 16%),
+    radial-gradient(circle at 72% 18%, rgba(118, 180, 154, 0.08), transparent 22%),
+    radial-gradient(circle at 52% 60%, rgba(214, 177, 93, 0.05), transparent 24%),
+    linear-gradient(135deg, transparent 0 24%, rgba(245, 236, 214, 0.018) 24% 28%, transparent 28% 100%),
+    linear-gradient(40deg, transparent 0 58%, rgba(118, 180, 154, 0.022) 58% 61%, transparent 61% 100%);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+{{selector}} .workbench::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(118, 180, 154, 0.09), transparent 34%),
+    radial-gradient(circle at 48% 46%, rgba(214, 177, 93, 0.06), transparent 42%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+{{selector}} .workbench > .empty-workbench,
+{{selector}} .workbench > .workbench-item,
+{{selector}} .workbench > .workbench-item.ghost,
+{{selector}} .stats-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+{{selector}} .elements-panel,
+{{selector}} .workbench-shell,
+{{selector}} .desktop-menu-panel,
+{{selector}} .celebration-card,
+{{selector}} .confirmation-card {
+  position: relative;
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(245, 236, 214, 0.06),
+    inset 0 0 0 1px rgba(214, 177, 93, 0.06);
+}
+
+{{selector}} .elements-panel::before,
+{{selector}} .workbench-shell::before,
+{{selector}} .desktop-menu-panel::before,
+{{selector}} .celebration-card::before,
+{{selector}} .confirmation-card::before,
+{{selector}} .class-forge-shell::before,
+{{selector}} .class-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, rgba(245, 236, 214, 0.03), transparent 18%),
+    radial-gradient(circle at 18% 12%, rgba(118, 180, 154, 0.08), transparent 22%),
+    radial-gradient(circle at 84% 10%, rgba(214, 177, 93, 0.08), transparent 18%);
+  pointer-events: none;
+}
+
+{{selector}} .panel-kicker,
+{{selector}} .stat-label,
+{{selector}} .share-discovery-label,
+{{selector}} .celebration-label,
+{{selector}} .class-sheet-label {
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 12px rgba(118, 180, 154, 0.22);
+}
+
+{{selector}} .desktop-menu-button,
+{{selector}} .ghost-button,
+{{selector}} .panel-toggle,
+{{selector}} .panel-label-button,
+{{selector}} .mobile-menu-title {
+  color: var(--accent);
+}
+
+{{selector}} .panel-title-row h2,
+{{selector}} .class-panel-header h2,
+{{selector}} .class-forge-board h3,
+{{selector}} .class-forge-preview h3,
+{{selector}} .class-mark-copy strong,
+{{selector}} .class-panel-body h4 {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-shadow:
+    0 0 18px rgba(214, 177, 93, 0.08),
+    0 0 28px rgba(118, 180, 154, 0.06);
+}
+
+{{selector}} .stat-card,
+{{selector}} .sort-select select,
+{{selector}} .element-search {
+  background: linear-gradient(180deg, rgba(84, 28, 28, 0.86), rgba(47, 17, 19, 0.9));
+  border-color: rgba(214, 177, 93, 0.16);
+}
+
+{{selector}} .stat-card strong {
+  color: #f7f0e2;
+}
+
+{{selector}} .workbench-item,
+{{selector}} .drag-overlay-tile,
+{{selector}} .forge-drop-socket,
+{{selector}} .class-mark-card,
+{{selector}} .class-forge-preview-card {
+  box-shadow:
+    0 0 0 1px rgba(214, 177, 93, 0.08),
+    0 10px 26px rgba(0, 0, 0, 0.18),
+    0 0 24px rgba(118, 180, 154, 0.07);
+}
+
+{{selector}} .forge-drop-socket,
+{{selector}} .class-forge-working-art,
+{{selector}} .class-symbol-placeholder-art {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(245, 236, 214, 0.08), transparent 22%),
+    radial-gradient(circle at 50% 60%, rgba(118, 180, 154, 0.08), transparent 36%),
+    linear-gradient(180deg, rgba(71, 23, 24, 0.9), rgba(33, 12, 15, 0.92));
+  border-color: rgba(214, 177, 93, 0.2);
+}
+
+{{selector}} .primary-button {
+  box-shadow:
+    0 10px 24px rgba(120, 38, 34, 0.3),
+    0 0 28px rgba(214, 177, 93, 0.14);
+}
+
+{{selector}} .ghost-button:hover,
+{{selector}} .panel-toggle:hover,
+{{selector}} .desktop-menu-button:hover,
+{{selector}} .panel-label-button:hover,
+{{selector}} .class-mark-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(214, 177, 93, 0.12),
+    0 0 30px rgba(118, 180, 154, 0.12);
+}
