@@ -1,0 +1,29 @@
+{{selector}} .workbench {
+  background:
+    linear-gradient(var(--board-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--board-line) 1px, transparent 1px),
+    radial-gradient(circle at top, var(--board-glow), transparent 22%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(216, 164, 67, 0.045) 0 18px,
+      rgba(119, 200, 186, 0.02) 18px 36px
+    ),
+    var(--board-surface);
+}
+
+{{selector}} .elements-panel,
+{{selector}} .workbench-shell,
+{{selector}} .desktop-menu-panel,
+{{selector}} .celebration-card,
+{{selector}} .confirmation-card {
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 231, 193, 0.05);
+}
+
+{{selector}} .panel-kicker,
+{{selector}} .stat-label,
+{{selector}} .share-discovery-label,
+{{selector}} .celebration-label {
+  color: var(--accent);
+}
