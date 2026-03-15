@@ -1,0 +1,153 @@
+{{selector}} {
+  background-attachment: fixed;
+}
+
+{{selector}} .elements-panel,
+{{selector}} .workbench-shell,
+{{selector}} .class-forge-shell,
+{{selector}} .class-panel,
+{{selector}} .desktop-menu-panel,
+{{selector}} .celebration-card,
+{{selector}} .confirmation-card,
+{{selector}} .mobile-menu-card {
+  color: var(--text);
+  border-color: rgba(74, 125, 211, 0.34);
+  border-radius: 18px;
+  box-shadow:
+    0 18px 42px rgba(16, 57, 127, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 0 0 1px rgba(123, 169, 236, 0.32);
+}
+
+{{selector}} .panel-header,
+{{selector}} .desktop-menu-section-title {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(20, 68, 145, 0.28);
+}
+
+{{selector}} .elements-panel .panel-header,
+{{selector}} .workbench-shell .panel-header,
+{{selector}} .class-forge-shell .panel-header,
+{{selector}} .class-panel .panel-header {
+  margin: -1px -1px 18px;
+  padding: 12px 16px;
+  border-radius: 17px 17px 12px 12px;
+  background: linear-gradient(180deg, #6eb6ff 0%, #3a7ee5 55%, #1b58c3 100%);
+  border-bottom: 1px solid rgba(24, 73, 154, 0.26);
+}
+
+{{selector}} .panel-kicker,
+{{selector}} .stat-label,
+{{selector}} .share-discovery-label,
+{{selector}} .celebration-label,
+{{selector}} .class-sheet-label {
+  color: #1f5ec8;
+}
+
+{{selector}} .workbench {
+  background:
+    linear-gradient(var(--board-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--board-line) 1px, transparent 1px),
+    radial-gradient(circle at top, var(--board-glow), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(201, 224, 255, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(103, 149, 225, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+{{selector}} .workbench-item,
+{{selector}} .drag-overlay-tile,
+{{selector}} .forge-drop-socket,
+{{selector}} .class-mark-card,
+{{selector}} .class-forge-preview-card,
+{{selector}} .stat-card,
+{{selector}} .element-pill,
+{{selector}} .recipe-chip,
+{{selector}} .skill-chip {
+  border-color: rgba(106, 146, 211, 0.3);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(214, 231, 255, 0.96));
+  box-shadow:
+    0 6px 16px rgba(37, 87, 164, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+{{selector}} .forge-drop-socket,
+{{selector}} .class-forge-working-art,
+{{selector}} .class-symbol-placeholder-art {
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.45), transparent 28%),
+    linear-gradient(180deg, rgba(241, 248, 255, 0.98), rgba(196, 220, 255, 0.96));
+}
+
+{{selector}} .primary-button {
+  color: #382100;
+  background: linear-gradient(180deg, #ffd27d 0%, #ffb13a 52%, #f0841d 100%);
+  border-color: rgba(180, 94, 14, 0.28);
+  box-shadow:
+    0 10px 22px rgba(191, 103, 23, 0.2),
+    inset 0 1px 0 rgba(255, 242, 214, 0.95);
+}
+
+{{selector}} .ghost-button,
+{{selector}} .panel-toggle,
+{{selector}} .panel-label-button,
+{{selector}} .desktop-menu-button {
+  color: #1d4fa8;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(214, 232, 255, 0.92));
+  border-color: rgba(106, 146, 211, 0.24);
+}
+
+{{selector}} .sort-select select,
+{{selector}} .element-search,
+{{selector}} .mobile-menu-card input,
+{{selector}} .mobile-menu-card select {
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(229, 240, 255, 0.96));
+  border-color: rgba(106, 146, 211, 0.26);
+}
+
+{{selector}} .achievement-gallery-card,
+{{selector}} .class-gallery-detail-card {
+  color: #163a78;
+  background: linear-gradient(180deg, rgba(252, 253, 255, 0.99), rgba(219, 234, 255, 0.98));
+}
+
+{{selector}} .achievement-gallery-summary p,
+{{selector}} .achievement-empty-state p,
+{{selector}} .class-gallery-detail-card p,
+{{selector}} .class-gallery-detail-card span,
+{{selector}} .class-gallery-detail-card strong,
+{{selector}} .class-mark-copy strong {
+  color: #163a78;
+}
+
+{{selector}} .class-gallery-detail-card .achievement-requirement,
+{{selector}} .class-gallery-detail-card .class-sheet-style,
+{{selector}} .class-gallery-detail-card .class-stat-row span,
+{{selector}} .class-gallery-detail-card .class-sheet-card span {
+  color: #2f5fa9 !important;
+}
+
+{{selector}} .class-gallery-detail-card h3,
+{{selector}} .achievement-empty-state h4,
+{{selector}} .class-mark-copy strong {
+  color: #0d2f69;
+}
+
+{{selector}} .class-gallery-detail-card .class-sheet-card,
+{{selector}} .class-gallery-detail-card .class-skill-chip,
+{{selector}} .class-mark-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(222, 236, 255, 0.98));
+  border-color: rgba(91, 136, 207, 0.38);
+}
+
+{{selector}} .desktop-menu-button:hover,
+{{selector}} .ghost-button:hover,
+{{selector}} .panel-toggle:hover,
+{{selector}} .panel-label-button:hover,
+{{selector}} .class-mark-card:hover {
+  box-shadow:
+    0 10px 20px rgba(28, 79, 160, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    0 0 0 2px rgba(121, 173, 244, 0.18);
+}
