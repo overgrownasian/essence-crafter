@@ -1,0 +1,13 @@
+services:
+  essence-craft:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+    image: essence-craft:latest
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.docker.local
